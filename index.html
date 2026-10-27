@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Maria Luiza Bandeira</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="escuro">
+  <header class="topo">
+    <a class="logo" href="#sobre">Maria Luiza Bandeira</a>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button id="btn-tema" class="btn-tema" type="button">Tema</button>
+  </header>
+
+  <main>
+    <section id="sobre" class="apresentacao">
+      <img class="foto" src="assets/profile.jpg" alt="Foto de Maria Luiza ">
+      <div class="apresentacao-texto">
+        <p class="saudacao">Olá, eu sou</p>
+        <h1>Maria Luiza Bandeira</h1>
+        <p>Estudante de Ciência da Computação na Universidade Tiradentes (UNIT)</p>
+        <a class="botao" href="#portfolio">Ver projetos</a>
+      </div>
+    </section>
+    <section id="portfolio" class="secao">
+      <h2>Portfólio</h2>
+      <div class="carrossel">
+        <button id="btn-anterior" class="seta" type="button" aria-label="Projetos anteriores">&lt;</button>
+
+        <div class="trilho" id="trilho-projetos">
+          <article class="card">
+            <div class="card-imagem"><a href="https://bandeiramalu.github.io/lampada-mudanca-de-dom/" target="_blank"><img src="assets/lamp_on_off.png" alt="Foto de duas lâmpadas, uma ligada e outra desligada."></a></div>
+            <h3>Lâmpada</h3>
+            <p>Manipulação de DOM (Document Object Model).</p>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">02</div>
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">03</div>
+            <h3>Projeto 3</h3>
+            <p>Descrição do projeto.</p>
+          </article>
+        
+          <article class="card">
+            <div class="card-imagem">04</div>
+            <h3>Projeto 4</h3>
+            <p>Descrição do projeto.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">05</div>
+            <h3>Projeto 5</h3>
+            <p>Descrição do projeto.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">06</div>
+            <h3>Projeto 6</h3>
+            <p>Descrição do projeto.</p>
+          </article>
+
+        </div>
+
+        <button id="btn-proximo" class="seta" type="button" aria-label="Próximos projetos">&gt;</button>
+      </div>
+    </section>
+    
+    <section id="skills" class="secao">
+      <h2>Habilidades</h2>
+      <p>Habilidades que estou desenvolvendo.</p>
+
+      <div class="skill">
+        <div class="skill-cabecalho">
+          <span>HTML</span><span>50%</span>
+        </div>
+        <div class="barra">
+          <div class="nivel" data-nivel="50"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-cabecalho">
+          <span>CSS</span><span>25%</span>
+        </div>
+        <div class="barra">
+          <div class="nivel" data-nivel="25"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-cabecalho">
+          <span>JavaScript</span><span>30%</span>
+        </div>
+        <div class="barra">
+          <div class="nivel" data-nivel="30"></div>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="secao">
+      <h2>Contato</h2>
+      <div class="contato-grid">
+        <article class="card contato-card">
+          <h3>Vamos conversar?</h3>
+          <p>Use o formulário para deixar uma mensagem ou entre em contato pelas minhas redes:</p>
+          <div class="contato-links">
+            <a class="contato-link" href="mailto:maria.bandeira2006@souunit.com.br" aria-label="Enviar e-mail para maria.bandeira2006@souunit.com.br">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm9 8L3.5 7h17L12 13Zm-9 5h18V8.2l-9 6.3-9-6.3V18Z"/>
+              </svg>
+              <span>maria.bandeira2006@souunit.com.br</span>
+            </a>
+            <a class="contato-link" href="https://www.linkedin.com/in/bandeiramalu/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.74H4.96V9.17h2.97v9.57ZM6.45 7.86a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44Zm12.3 10.88h-2.96v-4.65c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.49V9.17h2.84v1.31h.04c.39-.75 1.36-1.55 2.8-1.55 3 0 3.58 1.98 3.58 4.55v5.26Z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a class="contato-link" href="https://github.com/bandeiramalu" target="_blank" rel="noopener noreferrer" aria-label="Perfil no GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.7 2.61 1.21 3.25.93.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.04-1.14 3.04-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.99 0 4.29-2.61 5.23-5.1 5.51.4.35.76 1.03.76 2.08v3.09c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </article>
+
+        <form id="form-contato" class="formulario" novalidate>
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" placeholder="Seu nome">
+
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="voce@exemplo.com">
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+
+          <button class="botao" type="submit">Enviar</button>
+          <p id="retorno-formulario" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Maria Luiza Bandeira · Portfólio pessoal</p>
+  </footer>
+</body>
+</html>
