@@ -11,11 +11,11 @@ const btnAnterior = document.getElementById("btn-anterior");
 const btnProximo = document.getElementById("btn-proximo");
 
 function rolarDireita() {
-  trilho.scrollBy({ left: 700, behavior: "smooth" });
+  trilho.scrollBy({ left: 300, behavior: "smooth" });
 }
 
 function rolarEsquerda() {
-  trilho.scrollBy({ left: -700, behavior: "smooth" });
+  trilho.scrollBy({ left: -300, behavior: "smooth" });
 }
 
 btnProximo.addEventListener("click", rolarDireita);
